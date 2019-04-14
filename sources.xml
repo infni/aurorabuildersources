@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akadamia/master/akadamia/sources.xml" />
+		</update>
+	</info>
+	<element name="Akadamia" type="Source" source="Akadamia" id="ID_HOMEBREW_SOURCE_AKADAMIA">
+		<description>
+			<![CDATA[<p>THe Akadamia setting.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">AKD</set>
+			<set name="author">Ghost</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

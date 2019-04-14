@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Viera</name>
+        <description>Akadamia Viera Race description</description>
+        <update version="0.0.1">
+            <file name="viera.xml" url="https://raw.githubusercontent.com/infni/akadamia/master/akadamia/races/viera.xml" />
+        </update>
+    </info>
+
+    <element name="Viera" type="Race" source="Akadamia" id="ID_AKD_RACE_VIERA">
+        <description>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>The Viera have leporine features, pointed feet, long ears and limbs. They generally wear stilettos, due to the shape of their feet. Their trademark long ears grant them exceptionally good hearing, although they are said to have excellent senses overall.</p> 
+			<h4>HIGHTENED SENSES</h4>
+			<p>They have excellent senses, and  superb eyesight; their sense of hearing allows them to hear even the slightest sound, which comes in handy if they are being hunted themselves.</p>
+			<h4>MAGICAL SENSATIVITY</h4>
+			<p>It is said that the Viera's superb hearing allows them to sense changes in the weather and the movement of all living things in the environments they inhabit. Their lifespan is roughly three times that of humans They grow much like Humans as children, but upon reaching adulthood the Viera retain their appearance until old age. </p>
+            <h4>HISTORY</h4>
+            <p>The Viera are a reclusive race of beings that live in the furthest reaches from modern civilization Ortus. Choosing instead to live in clans that are largely isolated from contact with the outside world, though not all follow  such a tradition, as some Viera do travel and live in the City-States, usually resulting in exile from their original clan. Viera are a study and adaptable people that have honed their skills and sharped their senses to facilitate their survival in even the most remote of settlements.</p>
+            <h4>SOCIETY</h4>
+            <p>Lorum ipsum.</p>
+            <h4>VIERA TRAITS</h4>
+            <p>Humanoids with bunny ears.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Wisdom and Dexterity scores both increases by 2.<br />
+                <span class="feature">Age.</span>Although viera reach physical maturity at about the same age as humans, the viera understanding of adulthood goes beyond physical growth to encompass worldly experience. An viera typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.<br />
+                <span class="feature">Alignment.</span>Viera tend toward Neutral allignments.<br />
+                <span class="feature">Size.</span>Your size is Medium.<br />
+                <span class="feature">Speed.</span>Your base walking speed is 35 feet.<br />
+                <span class="feature">Lapine Hop.</span>Your maximum high jump and long jump distances are 10ft. higher than how it would be normally calculated.<br />
+                <span class="feature">Darkvision.</span>The eyes of Viera are accustomed to dim light. They can see in dim light within 60 ft as if it were bright light, and in darkness as if it were dim light, though they cannot discern color in darkness, only shades of gray.<br />
+                <span class="feature">Heightened Senses.</span>With their exceptionally sensitive ears, viera have proficiency with the perception skill and advantage in checks that involve hearing.<br />
+                <span class="feature">Viera Magic.</span>All viera know the Guidance cantrip and can cast Speak with Animals at will. At 4th level, they can cast the Conjure Animals spell once per day using their Wisdom as the spellcasting ability.<br />
+                <span class="feature">Fey Ancestry.</span>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.<br />
+				<span class="feature">Trance.</span>Viera don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and Viera.<br />
+				<span class="feature">Subrace.</span>The Viera have two major clans that make up the bulk of their numbers. The Rava and the Veena. Both clans remain separated, but do remain in regular contact with one another. 
+            </p>
+        </description>
+        <sheet display="false">
+            <description>Veira ar bunny people.  Change this description sometime to be more accurate.</description>
+        </sheet>
+        <rules>
+            <stat name="dexterity" value="2" />
+            <stat name="wisdom" value="2" />
+            <stat name="innate speed" value="35" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_ANCESTRY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_TRANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MASK_OF_THE_WILD" />
+			<grant type="Racial Trait" id="ID_AKD_RACIAL_TRAIT_VIERA_LAPINE_HOP" />
+			<grant type="Racial Trait" id="ID_AKD_RACIAL_TRAIT_VIERA_HEIGHTENED_SENSES" />
+			<grant type="Racial Trait" id="ID_AKD_RACIAL_TRAIT_VIERA_MAGIC" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+        </rules>
+    </element>
+    <element name="Lapine Hop" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_LAPINE_HOP">
+        <description>
+            <p>Your maximum high jump and long jump distances are 10ft. higher than how it would be normally calculated.</p>
+        </description>
+        <sheet>
+            <description>Your maximum high jump and long jump distances are 10ft. higher than how it would be normally calculated.</description>
+        </sheet>
+    </element>
+    <element name="Heightened Senses" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_HEIGHTENED_SENSES">
+        <description>
+            <p>With their exceptionally sensitive ears, viera have proficiency with the perception skill and advantage in checks that involve hearing.</p>
+        </description>
+        <sheet>
+            <description>With their exceptionally sensitive ears, viera have proficiency with the perception skill and advantage in checks that involve hearing.</description>
+        </sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+    <element name="Viera Magic" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_MAGIC">
+        <description>
+            <p>All viera know the Guidance cantrip and can cast Speak with Animals at will. At 4th level, they can cast the Conjure Animals spell once per day using their Wisdom as the spellcasting ability.</p>
+        </description>
+        <sheet>
+            <description>All viera know the Guidance cantrip and can cast Speak with Animals at will. At 4th level, they can cast the Conjure Animals spell once per day using their Wisdom as the spellcasting ability.</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" />	
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ANIMALS" level="4" />	
+		</rules>
+    </element>
+</elements> 
