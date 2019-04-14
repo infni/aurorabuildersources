@@ -7,12 +7,12 @@
 	</info>
 	<element name="Akadamia" type="Source" source="Akadamia" id="ID_HOMEBREW_SOURCE_AKADAMIA">
 		<description>
-			<![CDATA[<p>THe Akadamia setting.</p>]]>
+			<![CDATA[<p>The Akadamia setting.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">AKD</set>
-			<set name="url"></set>
-			<set name="author">Ghost</set>
+			<set name="url">https://github.com/infni/akadamia</set>
+			<set name="author">InfnI</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
