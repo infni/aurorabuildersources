@@ -2,16 +2,16 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akadamia/master/akadamia/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/sources.xml" />
 		</update>
 	</info>
-	<element name="Akadamia" type="Source" source="Akadamia" id="ID_HOMEBREW_SOURCE_AKADAMIA">
+	<element name="akademeia" type="Source" source="Akademeia" id="ID_HOMEBREW_SOURCE_akademeia">
 		<description>
-			<![CDATA[<p>The Akadamia setting.</p>]]>
+			<![CDATA[<p>The akademeia setting.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">AKD</set>
-			<set name="url">https://github.com/infni/akadamia</set>
+			<set name="url">https://github.com/infni/akademeia</set>
 			<set name="author">InfnI</set>
 			<set name="homebrew">true</set>
 		</setters>

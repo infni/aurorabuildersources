@@ -2,13 +2,13 @@
 <elements>
     <info>
         <name>Viera</name>
-        <description>Akadamia Viera Race description</description>
+        <description>akademeia Viera Race description</description>
         <update version="0.0.1">
-            <file name="viera.xml" url="https://raw.githubusercontent.com/infni/akadamia/master/akadamia/races/viera.xml" />
+            <file name="viera.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/races/viera.xml" />
         </update>
     </info>
 
-    <element name="Viera" type="Race" source="Akadamia" id="ID_AKD_RACE_VIERA">
+    <element name="Viera" type="Race" source="Akademeia" id="ID_AKD_RACE_VIERA">
         <description>
             <h4>PHYSICAL DESCRIPTION</h4>
             <p>The Viera have leporine features, pointed feet, long ears and limbs. They generally wear stilettos, due to the shape of their feet. Their trademark long ears grant them exceptionally good hearing, although they are said to have excellent senses overall.</p> 
@@ -56,7 +56,7 @@
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
         </rules>
     </element>
-    <element name="Lapine Hop" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_LAPINE_HOP">
+    <element name="Lapine Hop" type="Racial Trait" source="Akademeia" id="ID_AKD_RACIAL_TRAIT_VIERA_LAPINE_HOP">
         <description>
             <p>Your maximum high jump and long jump distances are 10ft. higher than how it would be normally calculated.</p>
         </description>
@@ -64,7 +64,7 @@
             <description>Your maximum high jump and long jump distances are 10ft. higher than how it would be normally calculated.</description>
         </sheet>
     </element>
-    <element name="Heightened Senses" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_HEIGHTENED_SENSES">
+    <element name="Heightened Senses" type="Racial Trait" source="Akademeia" id="ID_AKD_RACIAL_TRAIT_VIERA_HEIGHTENED_SENSES">
         <description>
             <p>With their exceptionally sensitive ears, viera have proficiency with the perception skill and advantage in checks that involve hearing.</p>
         </description>
@@ -75,7 +75,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
 		</rules>
 	</element>
-    <element name="Viera Magic" type="Racial Trait" source="Akadamia" id="ID_AKD_RACIAL_TRAIT_VIERA_MAGIC">
+    <element name="Viera Magic" type="Racial Trait" source="Akademeia" id="ID_AKD_RACIAL_TRAIT_VIERA_MAGIC">
         <description>
             <p>All viera know the Guidance cantrip and can cast Speak with Animals at will. At 4th level, they can cast the Conjure Animals spell once per day using their Wisdom as the spellcasting ability.</p>
         </description>

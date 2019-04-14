@@ -5,7 +5,7 @@
 			<file name="hosue-rules.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/sources.xml" />
 		</update>
 	</info>
-  <element name="Additional Feat" type="Option" source="Akadamia" id="ID_ADK_OPTION_FREEFEAT">
+  <element name="Additional Feat" type="Option" source="Akademeia" id="ID_ADK_OPTION_FREEFEAT">
     <description>
       <p>Free feat at first level.</p>
     </description>
@@ -16,7 +16,7 @@
       <select type="Feat" name="Feat (Additional Feat)" level="1" number="1" optional="true"/>
 	</rules>
   </element>
-  <element name="Cleric Lv1 (Extra)" type="Option" source="Akadamia" id="ID_ADK_OPTION_CLERIC_1">
+  <element name="Cleric Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_CLERIC_1">
     <description>
       <p>Get Cleric Iinital level ability</p>
     </description>
@@ -33,7 +33,7 @@
       <select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" />
 	  </rules>
   </element>
-  <element name="Warlock Lv1 (Extra)" type="Option" source="Akadamia" id="ID_ADK_OPTION_WARLOCK_1">
+  <element name="Warlock Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_WARLOCK_1">
     <description>
       <p>Get Warlock Iinital level ability</p>
     </description>
@@ -48,7 +48,7 @@
       <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill,Warlock" number="2" />
 	  </rules>
   </element>
-  <element name="Fighter Lv1 (Extra)" type="Option" source="Akadamia" id="ID_ADK_OPTION_FIGHTER_1">
+  <element name="Fighter Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_FIGHTER_1">
     <description>
       <p>Get Fighter Iinital level ability</p>
     </description>
