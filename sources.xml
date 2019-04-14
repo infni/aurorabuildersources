@@ -11,6 +11,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">AKD</set>
+			<set name="url"></set>
 			<set name="author">Ghost</set>
 			<set name="homebrew">true</set>
 		</setters>
