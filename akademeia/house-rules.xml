@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="hosue-rules.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/sources.xml" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
   </element>
   <element name="Cleric Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_CLERIC_1">
     <description>
-      <p>Get Cleric Iinital level ability</p>
+      <p>Get Cleric Inital level ability</p>
     </description>
     <sheet>
       <description>Add Cleric Initial Class Features.</description>
@@ -35,7 +35,7 @@
   </element>
   <element name="Warlock Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_WARLOCK_1">
     <description>
-      <p>Get Warlock Iinital level ability</p>
+      <p>Get Warlock Inital level ability</p>
     </description>
     <sheet>
       <description>Add Warlock Initial Class Features.</description>
@@ -50,7 +50,7 @@
   </element>
   <element name="Fighter Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_FIGHTER_1">
     <description>
-      <p>Get Fighter Iinital level ability</p>
+      <p>Get Fighter Inital level ability</p>
     </description>
     <sheet>
       <description>Add Fighter Initial Class Features.</description>
@@ -68,7 +68,7 @@
 	  </rules>
   </element>
   <element name="Sorcerer Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_SORCERER_1">
-    <description>
+    <description>Inital
       <p>Get Sorcerer Iinital level ability</p>
     </description>
     <sheet>
@@ -83,6 +83,35 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
       <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill,Sorcerer" number="2" />
+	  </rules>
+  </element>
+  <element name="Druid Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_DRUID_1">
+    <description>
+      <p>Get Druid Inital level ability</p>
+    </description>
+    <sheet>
+      <description>Add Druid Initial Class Features.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" />
 	  </rules>
   </element>
 </elements>
