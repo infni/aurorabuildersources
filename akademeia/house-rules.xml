@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="hosue-rules.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/sources.xml" />
 		</update>
 	</info>
@@ -112,6 +112,24 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
       <select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" />
+	  </rules>
+  </element>
+  <element name="Ranger Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_RANGER_1">
+    <description>
+      <p>Get Ranger Inital level ability</p>
+    </description>
+    <sheet>
+      <description>Add Ranger Initial Class Features.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" />
 	  </rules>
   </element>
 </elements>
