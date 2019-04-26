@@ -1,27 +1,134 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="hosue-rules.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/sources.xml" />
 		</update>
 	</info>
-  <element name="Additional Feat" type="Option" source="Akademeia" id="ID_ADK_OPTION_FREEFEAT">
+  <element name="Akademia Custom Rules" type="Option" source="Akademeia" id="ID_ADK_OPTION_CAMPAIGN_RULES">
     <description>
-      <p>Free feat at first level.</p>
+      <p>Necessary options to create starting characters for Akedemia.</p>
     </description>
-    <sheet>
-      <description>Add an Additional Feat.</description>
+    <sheet display="false">
+      <description>Necessary options to create starting characters for Akedemia.</description>
     </sheet>
     <rules>
       <select type="Feat" name="Feat (Additional Feat)" level="1" number="1" optional="true"/>
-	</rules>
+      <grant type="Class Feature" id="ID_ADK_ENHANCED_MULTICLASS" level="1" />
+  	</rules>
   </element>
-  <element name="Cleric Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_CLERIC_1">
+  <element name="Enhanced Multiclass" type="Class Feature" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS">
+    <rules>
+      <select  name="Enhanced Multiclass" type="Archetype"  supports="Enhanced Multiclass"/>    
+    </rules>
+  </element>
+  <element name="Barbarian Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_BARBARIAN">
+    <supports>Enhanced Multiclass</supports>
     <description>
-      <p>Get Cleric Inital level ability</p>
+      <p>When multiclassing into Barbarian, take this Archetype to get the additional initial class features for Barbarian listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>None
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Constitution<br />
+        <span class="emphasis">Skills:</span>Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival
+      </p>
     </description>
     <sheet>
-      <description>Add Cleric Initial Class Features.</description>
+      <description>Barbarian Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"  />
+      <select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill,Barbarian"  />
+	  </rules>
+  </element>
+  <element name="Bard Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_BARD">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Bard, take this Archetype to get the additional initial class features for Bard listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, hand crossbows, longswords, rapiers, shortswords<br />
+        <span class="emphasis">Tools:</span>Three musical instruments of your choice<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Dexterity, Charisma<br />
+        <span class="emphasis">Skills:</span>Choose any three<br />
+      </p>
+    </description>
+    <sheet>
+      <description>Bard Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+      <select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instrument" number="3" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+      <select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill,Bard" number="3" />
+	  </rules>
+  </element>
+  <element name="Blood Hunter Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_BLOODHUNTER">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Blood Hunter, take this Archetype to get the additional initial class features for Blood Hunter listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+          <span class="emphasis">Armor:</span>Light armor, medium armor, shields<br />
+          <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+          <span class="emphasis">Tools:</span>Alchemist’s supplies 
+      </p>
+      <p>
+          <span class="emphasis">Saving Throws:</span>Strength, Wisdom<br />
+          <span class="emphasis">Skills:</span>Choose two skills from Athletics, Acrobatics, Arcana, History, Insight, Investigation, and Survival 
+      </p>
+    </description>
+    <sheet>
+      <description>Blood Hunter Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <select type="Proficiency" name="Skill Proficiency (Blood Hunter)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+	  </rules>
+  </element>
+  <element name="Cleric Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_CLERIC">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Cleric, take this Archetype to get the additional initial class features for Cleric listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shield<br/>
+        <span class="emphasis">Weapons:</span>Simple weapons<br/>
+        <span class="emphasis">Tools:</span>None<br/>
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Wisdom, Charisma<br/>
+        <span class="emphasis">Skills:</span>Choose two from History, Insight, Medicine, Persuasion, and Religion<br/>
+      </p>
+    </description>
+    <sheet>
+      <description>Cleric Level 1 Class Proficiencies.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -33,64 +140,23 @@
       <select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" />
 	  </rules>
   </element>
-  <element name="Warlock Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_WARLOCK_1">
+  <element name="Druid Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_Druid">
+    <supports>Enhanced Multiclass</supports>
     <description>
-      <p>Get Warlock Inital level ability</p>
+      <p>When multiclassing into Druid, take this Archetype to get the additional initial class features for Druid listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)<br />
+        <span class="emphasis">Weapons:</span>Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears<br />
+        <span class="emphasis">Tools:</span>Herbalism kit<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Intelligence, Wisdom<br />
+        <span class="emphasis">Skills:</span>Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival<br />
+      </p>
     </description>
     <sheet>
-      <description>Add Warlock Initial Class Features.</description>
-    </sheet>
-    <rules>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill,Warlock" number="2" />
-	  </rules>
-  </element>
-  <element name="Fighter Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_FIGHTER_1">
-    <description>
-      <p>Get Fighter Inital level ability</p>
-    </description>
-    <sheet>
-      <description>Add Fighter Initial Class Features.</description>
-    </sheet>
-    <rules>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" />
-	  </rules>
-  </element>
-  <element name="Sorcerer Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_SORCERER_1">
-    <description>Inital
-      <p>Get Sorcerer Iinital level ability</p>
-    </description>
-    <sheet>
-      <description>Add Sorcerer Initial Class Features.</description>
-    </sheet>
-    <rules>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill,Sorcerer" number="2" />
-	  </rules>
-  </element>
-  <element name="Druid Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_DRUID_1">
-    <description>
-      <p>Get Druid Inital level ability</p>
-    </description>
-    <sheet>
-      <description>Add Druid Initial Class Features.</description>
+      <description>Druid Level 1 Class Proficiencies.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -114,22 +180,94 @@
       <select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" />
 	  </rules>
   </element>
-  <element name="Ranger Lv1 (Extra)" type="Option" source="Akademeia" id="ID_ADK_OPTION_RANGER_1">
+  <element name="Fighter Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_FIGHTER">
+    <supports>Enhanced Multiclass</supports>
     <description>
-      <p>Get Ranger Inital level ability</p>
+      <p>When multiclassing into Fighter, take this Archetype to get the additional initial class features for Fighter listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>All armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>None<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Constitution<br />
+        <span class="emphasis">Skills:</span>Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival<br />
+      </p>
     </description>
     <sheet>
-      <description>Add Ranger Initial Class Features.</description>
+      <description>Fighter Level 1 Class Proficiencies.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
-      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+      <select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" />
+	  </rules>
+  </element>
+  <element name="Monk Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_MONK">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Monk, take this Archetype to get the additional initial class features for Monk listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>None<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, shortswords<br />
+        <span class="emphasis">Tools:</span>Choose one type of artisan’s tools or one musical instrument<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Dexterity<br />
+        <span class="emphasis">Skills:</span>Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth<br />
+      </p>
+    </description>
+    <sheet>
+      <description>Monk Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"  />
+      <select type="Proficiency" name="Tool Proficiency (Monk)" supports="Musical Instrument||Artisan tools"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"  />
+      <select type="Proficiency" name="Skill Proficiency (Monk)" supports="Skill,Monk" number="2"  />
+	  </rules>
+  </element>
+  <element name="Paladin Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_PALADIN">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Paladin, take this Archetype to get the additional initial class features for Paladin listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>All armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>None<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Wisdom, Charisma<br />
+        <span class="emphasis">Skills:</span>Choose two skills from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion<br />
+      </p>
+    </description>
+    <sheet>
+      <description>Paladin Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"  />
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"  />
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"  />
+
+      <select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill,Paladin" number="2"  />
 	  </rules>
   </element>
 </elements>
