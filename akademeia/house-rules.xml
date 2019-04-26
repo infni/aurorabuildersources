@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="hosue-rules.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/sources.xml" />
 		</update>
 	</info>
@@ -269,5 +269,147 @@
 
       <select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill,Paladin" number="2"  />
 	  </rules>
+  </element>
+  <element name="Ranger Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_RANGER">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Ranger, take this Archetype to get the additional initial class features for Ranger listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor, medium armor, shields<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>None<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Dexterity<br />
+        <span class="emphasis">Skills:</span>Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival<br />
+      </p>
+    </description>
+    <sheet>
+      <description>Ranger Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"  />
+      <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3"  />
+    </rules>
+  </element>
+  <element name="Rogue Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_ROGUE">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Rogue, take this Archetype to get the additional initial class features for Rogue listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light armor<br/>
+        <span class="emphasis">Weapons:</span>Simple weapons, hand crossbows, longswords, rapiers, shortswords<br/>
+        <span class="emphasis">Tools:</span>Thieves’ tools<br/>
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Dexterity, Intelligence<br/>
+        <span class="emphasis">Skills:</span>Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth<br/>
+      </p>
+    </description>
+    <sheet>
+      <description>Rogue Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"  />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"  />
+      <select type="Proficiency" name="Skill Proficiency (Rogue)" supports="Skill,Rogue" number="4"  />    
+    </rules>
+  </element>
+  <element name="Sorcerer Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_SORCERER">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Sorcerer, take this Archetype to get the additional initial class features for Sorcerer listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <b>Armor: </b>None<br/>
+        <b>Weapons:</b>Daggers, darts, slings, quarterstaffs, light crossbows<br/>
+        <b>Tools:</b>None<br/>
+        <b>Saving Throws:</b>Constitution, Charisma<br/>
+        <b>Skills:</b>Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion<br/>
+      </p>
+    </description>
+    <sheet>
+      <description>Sorcerer Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill,Sorcerer" number="2" />
+    </rules>
+  </element>
+  <element name="Warlock Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_WARLOCK">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Warlock, take this Archetype to get the additional initial class features for Warlock listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <b>Armor: </b>Light armor<br/>
+        <b>Weapons:</b>Simple weapons<br/>
+        <b>Tools:</b>None<br/>
+        <b>Saving Throws:</b>Wisdom, Charisma<br/>
+        <b>Skills:</b>Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion<br/>
+      </p>
+    </description>
+    <sheet>
+      <description>Warlock Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill,Warlock" number="2" />
+    </rules>
+  </element>
+  <element name="Warlock Enhanced Multiclass" type="Archetype" source="Akademeia" id="ID_ADK_ENHANCED_MULTICLASS_WARLOCK">
+    <supports>Enhanced Multiclass</supports>
+    <description>
+      <p>When multiclassing into Warlock, take this Archetype to get the additional initial class features for Warlock listed below.</p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>None<br/>
+        <span class="emphasis">Weapons:</span>Daggers, darts, slings, quarterstaffs, light crossbows,<br/>
+        <span class="emphasis">Tools:</span>None<br/>
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Intelligence, Wisdom<br/>
+        <span class="emphasis">Skills:</span>Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion<br/>
+      </p>
+    </description>
+    <sheet>
+      <description>Warlock Level 1 Class Proficiencies.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+      
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+
+      <select type="Proficiency" name="Skill Proficiency (Wizard)" supports="Skill,Wizard" number="2" />
+    </rules>
   </element>
 </elements>
