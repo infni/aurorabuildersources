@@ -3,16 +3,19 @@
 	<info>
 		<name>Akademeia</name>
 		<description>Content for the Akademeia house rules.</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="akademeia.index" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia.index" />
 		</update>
 	</info>
 	<files>
 		<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/sources.xml" />
 		
-		<file name="house-rules.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/house-rules.xml" />
+		<file name="enhanced-multiclass.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/enhanced-multiclass.xml" />
 
 		<!-- races -->
 		<file name="viera.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/races/viera.xml" />
+
+		<!-- classes -->
+		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/eldritch-fire-knight.xml" />
 	</files>
 </index>

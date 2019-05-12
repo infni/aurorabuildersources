@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Eldritch Fire Knight</name>
+    <description>A Fire-based Eldritch knigh varient.</description>
+    <update version="0.0.1">
+		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/eldritch-fire-knight.xml" />
+    </update>
+  </info>
+  <!-- Eldritch Knight Archetype -->
+  <element name="Eldritch Fire Knight" type="Archetype" source="Akademeia" id="ID_ADK_ELDRITCH_FIRE_KNIGHT">
+    <supports>Martial Archetype</supports>
+    <description>
+      <p>The archetypical Eldritch Fire Knight combines the martial mastery common to all fighters with a careful study of magic. Eldritch Knights use magical techniques similar to those practiced by wizards, but they focus predominantly on offensive and defensive magics, weaving primal arcane elements into their attacks. The Eldritch Knight seeks to dominate the battlefield with both cunning and might.</p>
+      <h4>ELDRITCH MANA POOL</h4>
+      <p>You can tap into a wellspring of arcane energy. Beginning at 3rd level, you gain access to a pool of eldritch points. This pool begins with 3 points, plus a number of points equal to your Intelligence bonus, and increases by 1 point for every fighter level you gain. For example, an 8th-level Eldritch Knight with a 14 Intelligence has 10 eldritch points. You may use these points to fuel a variety of abilities, listed below. These eldritch points replenish at the end of a long rest. Additionally you can expend a spell slot as a action to regain 1 eldritch point. If you use a 2 level spell slot you regain 2 eldritch points and so on.</p>
+			<h4>ELDRITCH FORGED</h4>
+      <p>You can weave elemental fire into your melee attacks.</p>
+			<p class="indent"><b><em>Damage Type:</em></b> The damage type of your bonded weapon attacks changes to fire. You can revert to its original type as a bonus action.</p>
+			<p class="indent"><b><em>Consume your Foes:</em></b> You can stoke your attacks flames to also consume foes near your target. By spending 1 eldritch point, the fire damage of your melee attacks now also affects any foes adjacent to your primary target. This effect lasts until the beginning of your next turn. The adjacent foes must make a Dexterity saving throw (DC = 8 + proficiency bonus + Intelligence modifier). If they succeed at the saving throw, they take half the fire damage; if they fail, they take the full fire damage.</p>
+			<p class="indent"><b><em>Control Fire:</em></b> You learn the Control Flames cantrip.</p>
+    </description>
+    <sheet display="false">
+      <description>The archetypal Eldritch Knight combines the martial mastery common to all fighters with a careful study of magic.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND" level="3"/>
+      <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" level="3" spellcasting="Paladin" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" level="7"/>
+      <grant type="Archetype Feature" id="ID_ADK_ELDRITCH_FIRE_KNIGHT_ELDRITCH_FIRE_RESISTANCE" level="7"/>
+      <grant type="Archetype Feature" id="ID_ADK_ELDRITCH_FIRE_KNIGHT_ELDRITCH_SMITE" level="10"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE" level="15"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" level="18"/>
+    </rules>
+  </element>
+  <element name="Eldritch Smite" type="Archetype Feature" source="Akademeia" id="ID_ADK_ELDRITCH_FIRE_KNIGHT_ELDRITCH_SMITE">
+    <description>
+      <p>Starting at 10th level, when you hit a creature with your bonded weapon, you deal an additional 1d8 fire damage.  This damage goes up to 2d8 at 15th level and 3d8 at 18th level.</p>
+    </description>
+    <sheet>
+      <description>Melee attacks made with your bonded weapon deal an additional 1d8 fire damage.  this damage increases to 2d8 at 15th level and 3d8 at 18th level.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Eldritch Fire Resistance" type="Archetype Feature" source="Akademeia" id="ID_ADK_ELDRITCH_FIRE_KNIGHT_ELDRITCH_FIRE_RESISTANCE">
+    <description>
+      <p>starting at 7th level, you are resistance to fire damage.</p>
+    </description>
+    <sheet>
+      <description>You are resistance to fire damage.</description>
+    </sheet>
+    <rules />
+  </element>
+</elements>
