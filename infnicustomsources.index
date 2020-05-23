@@ -3,7 +3,7 @@
 	<info>
 		<name>InfnI's custom sources I made for friends.</name>
 		<description>A bunch of different home brew campaings that I was aked to make Content for.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="infnicustomsources.index" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/infnicustomsources.index" />
 		</update>
 	</info>
