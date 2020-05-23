@@ -20,6 +20,6 @@
 		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/classes/eldritch-fire-knight.xml" />
 
 		<!-- options -->
-		<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/optional-first-level-feat.xml" />
+		<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/options/optional-first-level-feat.xml" />
 	</files>
 </index>
