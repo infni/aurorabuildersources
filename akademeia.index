@@ -3,7 +3,7 @@
 	<info>
 		<name>Akademeia</name>
 		<description>Content for the Akademeia house rules.</description>
-		<update version="0.0.4">
+		<update version="0.2.0">
 			<file name="akademeia.index" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia.index" />
 		</update>
 	</info>
@@ -14,9 +14,12 @@
 
 		<!-- races -->
 		<file name="viera.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/races/viera.xml" />
+		<file name="akata-fox.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/castalia/races/akata-fox.xml" />
 
 		<!-- classes -->
 		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/eldritch-fire-knight.xml" />
-		<file name="mystic.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/mystic.xml" />
+
+		<!-- options -->
+		<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/optional-first-level-feat.xml" />
 	</files>
 </index>

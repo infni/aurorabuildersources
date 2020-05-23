@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/options/optional-first-level-feat.xml" />
+		</update>
+	</info>
+  <element name="First Level starting Feat" type="Option" source="Optional Feat" id="ID_OPTIONAL_FIRST_LEVEL_FEAT">
+    <description>
+      <p>Include an Extra feat at level 1.</p>
+    </description>
+    <sheet display="false">
+      <description>Include an Extra feat at level.</description>
+    </sheet>
+    <rules>
+      <select type="Feat" name="Feat (Additional Feat)" level="1" number="1" optional="true"/>
+  	</rules>
+  </element>
+</elements>
+
+
+

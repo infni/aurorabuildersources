@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="akata-fox.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/castalia/races/akata-fox.xml" />
+		</update>
+	</info>
+
+  <element name="Akata" type="Race" source="Castalia" id="ID_RACE_AKATA">
+    <description>
+      <p class="flavor">A rare and endangered beast race, the Akata are rarely ever seen in the public mostly sticking to there forested homes.</p>
+
+      <h4>AKATA TRAITS</h4>
+      <p>You're Akata Fox has these traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Wis increase by 2 and you Dex increase by 1.<br />
+        <span class="feature">Age.</span>Akata reach adulthood in their late teens and live less than a century.<br />
+        <span class="feature">Alignment.</span>Any Chaotic alignment.<br />
+        <span class="feature">Size.</span>Often between 4'4" and 5'5". Your size is Medium.<br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+        <span class="feature">Languages.</span>You can speak Common and Akatan.<br />
+        <span class="feature">Senses.</span>You have Darkvision out to 60 feet.<br />
+        <span class="feature">Vulpine Instincts.</span>You have proficiency in the Perception and Stealth skills.<br />
+        <span class="feature">Fox Claws.</span>description.<br />
+        <span class="feature">Prowl.</span>description.<br />
+      </p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" />
+      <stat name="wisdom" value="2" />
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_AKATA"/>
+      <grant type="Vision" id="ID_VISION_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AKATA_VULPINE_INSTINCTS" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AKATA_FOX_CLAWS" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AKATA_PROWL" />
+	</rules>
+  </element>  
+
+  <element name="Vulpine Instincts" type="Racial Trait" source="Castalia" id="ID_RACIAL_TRAIT_AKATA_VULPINE_INSTINCTS">
+  	<description>
+  		<p>You have proficiency in the Perception and Stealth skills.</p>
+  	</description>
+  	<sheet>
+  		<description>You have proficiency in the Perception and Stealth skills.</description>
+  	</sheet>
+  	<rules>
+  		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+  		<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+  	</rules>
+  </element>
+	
+  <element name="Fox Claws" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_AKATA_FOX_CLAWS">
+  	<description>
+  		<p>your claws are natural weapons. They do 1d4+strength slashing.</p>
+  	</description>
+  	<sheet>
+  		<description>your claws are natural weapons. They do 1d4+strength slashing.</description>
+  	</sheet>
+  	<rules>
+  		<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+  		<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+  		<stat name="martial arts:dice" value="4" bonus="martial arts" />
+  	</rules>
+  </element>
+	
+  <element name="Prowl" type="Racial Trait" source="Castalia" id="ID_RACIAL_TRAIT_AKATA_PROWL">
+  	<description>
+  		<p>By dropping to all fours you can gain advantage on stealth, you are prone. Cannot use this trait while wielding a weapon or wearing stealth disadvantage armor.</p>
+  	</description>
+  	<sheet>
+  		<description>By dropping to all fours you can gain advantage on stealth, you are prone. Cannot use this trait while wielding a weapon or wearing stealth disadvantage armor.</description>
+  	</sheet>
+  </element>
+	
+  <element name="Akata" type="Language" source="Castalia" id="ID_LANGUAGE_AKATA">
+  	<supports>Exotic</supports>
+  	<description>
+  		<p>Typically spoken by Akata Fox's in the world of Castalia.</p>
+  	</description>
+  	<setters>
+  		<set name="exotic">true</set>
+  		<set name="speakers">Akata</set>
+  		<set name="script">Akata</set>
+  	</setters>
+  </element>
+</elements>

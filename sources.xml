@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/sources.xml" />
 		</update>
 	</info>
@@ -11,6 +11,28 @@
 		</description>
 		<setters>
 			<set name="abbreviation">AKD</set>
+			<set name="url">https://github.com/infni/akademeia</set>
+			<set name="author">InfnI</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="castalia" type="Source" source="Castalia" id="ID_HOMEBREW_SOURCE_CASTALIA">
+		<description>
+			<![CDATA[<p>Oli's custom homebrew named Castalia.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CAS</set>
+			<set name="url">https://github.com/infni/akademeia</set>
+			<set name="author">InfnI</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Optional Feat" type="Source" source="Optional Feat" id="ID_HOMEBREW_SOURCE_OPTIONAL_FEAT">
+		<description>
+			<![CDATA[<p>Oli's custom homebrew named Castalia.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">OPT</set>
 			<set name="url">https://github.com/infni/akademeia</set>
 			<set name="author">InfnI</set>
 			<set name="homebrew">true</set>
