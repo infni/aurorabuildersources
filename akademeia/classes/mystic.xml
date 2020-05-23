@@ -4,7 +4,7 @@
     <name>Mystic</name>
     <description>Mystic (Multiclass-able Varient)</description>
     <update version="0.0.1">
-		<file name="mystic.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/mystic.xml" />
+		<file name="mystic.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/classes/mystic.xml" />
     </update>
   </info>
 	<!-- Mystic Class -->

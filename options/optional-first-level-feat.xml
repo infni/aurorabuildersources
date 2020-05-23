@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/options/optional-first-level-feat.xml" />
+			<file name="optional-first-level-feat.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/options/optional-first-level-feat.xml" />
 		</update>
 	</info>
   <element name="First Level starting Feat" type="Option" source="Optional Feat" id="ID_OPTIONAL_FIRST_LEVEL_FEAT">

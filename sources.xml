@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.2">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/sources.xml" />
 		</update>
 	</info>
 	<element name="akademeia" type="Source" source="Akademeia" id="ID_HOMEBREW_SOURCE_akademeia">

@@ -4,7 +4,7 @@
         <name>Viera</name>
         <description>akademeia Viera Race description</description>
         <update version="0.0.1">
-            <file name="viera.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/races/viera.xml" />
+            <file name="viera.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/races/viera.xml" />
         </update>
     </info>
 

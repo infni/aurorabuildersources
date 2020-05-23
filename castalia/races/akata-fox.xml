@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="akata-fox.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/castalia/races/akata-fox.xml" />
+			<file name="akata-fox.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/castalia/races/akata-fox.xml" />
 		</update>
 	</info>
 

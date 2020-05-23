@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.8">
-			<file name="enhanced-multiclass.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/enhanced-multiclass.xml" />
+			<file name="enhanced-multiclass.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/enhanced-multiclass.xml" />
 		</update>
 	</info>
   <element name="Akademia Custom Rules" type="Option" source="Akademeia" id="ID_ADK_OPTION_CAMPAIGN_RULES">

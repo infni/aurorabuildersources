@@ -4,7 +4,7 @@
     <name>Eldritch Fire Knight</name>
     <description>A Fire-based Eldritch knigh varient.</description>
     <update version="0.0.2">
-		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/akademeia/master/akademeia/classes/eldritch-fire-knight.xml" />
+		<file name="eldritch-fire-knight.xml" url="https://raw.githubusercontent.com/infni/aurorabuildersources/master/akademeia/classes/eldritch-fire-knight.xml" />
     </update>
   </info>
   <!-- Eldritch Knight Archetype -->
