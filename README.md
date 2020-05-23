@@ -2,7 +2,12 @@
 Include the additional content provided in this collection by launching the Aurora Builder, going to the **Start > Additional Content** tab and downloading one or more of the index files by providing the URLs below. When you have downloaded the indices you want, click the **Update Content Files** button to start downloading the content.
 When this content gets updated or new content gets added the builder will automatically update your files for you in the background.
 
-- https://raw.githubusercontent.com/infni/akademeia/master/akademeia.index
+- https://raw.githubusercontent.com/infni/akademeia/master/infnicustomsources.index
+
+### Includes these sources (all Homebrew)
+  * Akadamia
+  * Castalia
+  * Optional Features
 
 
 ### Support
